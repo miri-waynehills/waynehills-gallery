@@ -51,7 +51,6 @@ let speed = 0.3;
 let keyboard = []
 
 button.addEventListener('click', () => {
-    console.log('ViewStart');
     controlCamera.lock()
 })
 
@@ -113,7 +112,6 @@ const tick = () =>
 
     for(const intersect of intersectWall){
         for(const intersect of intersectFloor) {
-            console.log('uv', intersect.uv);
             if(intersect.uv.x < 0.5) {
                 cameraPosition.x += 5
             }
