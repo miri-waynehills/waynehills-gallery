@@ -17,7 +17,6 @@ const fbxLoader = new FBXLoader()
 const gltfLoader = new GLTFLoader()
 let fbxURL = "/models/gallery/211124_03/export_cylindrical.fbx"; 
 let gltfURL = "/models/gallery/211202_export/211202_export_metaspace.gltf"; 
-// let gltfURL = "/models/gallery/211124_02/test.glb"; 
 function loadMoldeledObjects(scene) {
     fbxLoader.load(fbxURL,(fbx) => {
         fbx.scale.set(0.01, 0.01, 0.01)
@@ -35,14 +34,12 @@ function loadMoldeledObjects(scene) {
      )
 }
 
-// video contents
 const content1 = document.getElementById('content-1');
 content1.play();
 const content1Texture = new THREE.VideoTexture(content1);
 const content1Material =  new THREE.MeshBasicMaterial({map: content1Texture,toneMapped: false});
 const screen1 = new THREE.PlaneGeometry(4,4);
 const content1Screen = new THREE.Mesh(screen1, content1Material);
-// content1Screen.rotation.set(0, Math.PI*0.5, 0)
 content1Screen.position.set(-16.1,2.1,-19.3)
 
 const content2 = document.getElementById('content-2');
@@ -77,7 +74,6 @@ const content5Texture = new THREE.VideoTexture(content5);
 const content5Material =  new THREE.MeshBasicMaterial({map: content5Texture,toneMapped: false});
 const screen5 = new THREE.PlaneGeometry(7,4);
 const content5Screen = new THREE.Mesh(screen5, content5Material);
-// content5Screen.rotation.set(0, -Math.PI, 0)
 content5Screen.position.set(-19.17,2.15,9.9)
 
 const content6 = document.getElementById('content-6');
@@ -98,7 +94,7 @@ const content7Screen = new THREE.Mesh(screen7, content7Material);
 content7Screen.rotation.set(0, Math.PI, 0)
 content7Screen.position.set(0.7,2.1,18.1)
 
-// image contents
+
 const textureLoader = new THREE.TextureLoader()
 
 const imageContent1Texture = textureLoader.load('/models/gallery/211125_02/mars.png')

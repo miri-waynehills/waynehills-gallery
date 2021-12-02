@@ -1,5 +1,4 @@
 import * as THREE from 'three'
-import CANNON from 'cannon';
 
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.4)
 const sunLight = new THREE.PointLight('#ffffff', 50)

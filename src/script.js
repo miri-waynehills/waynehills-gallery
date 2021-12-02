@@ -26,19 +26,11 @@ window.addEventListener('resize', () =>
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 })
 
-/**
- * Camera
- */
 const camera = new THREE.PerspectiveCamera(50, sizes.width / sizes.height, 0.1, 100)
-// camera.position.set(-10, 1.5, 15)
-camera.position.set(0, 1.5, -15)
-// camera.rotation.set(0, -Math.PI*1.5, 0)
+camera.position.set(0, 1.5, 0)
 camera.rotation.set(0, Math.PI*0.5, 0)
 scene.add(camera)
 
-/**
- * Renderer
- */
 const renderer = new THREE.WebGLRenderer({
     canvas: canvas,
     antialias: true
@@ -52,9 +44,6 @@ renderer.shadowMap.type = THREE.PCFSoftShadowMap
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
-/**
- * FPS View
- */
 const clock = new THREE.Clock();
 let controlCamera = new PointerLockControls(camera, renderer.domElement);
 let button = document.querySelector('#button')
