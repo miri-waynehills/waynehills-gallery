@@ -15,8 +15,8 @@ const updateAllMaterials = (scene) =>{
 
 const fbxLoader = new FBXLoader()
 const gltfLoader = new GLTFLoader()
-let fbxURL = "/models/gallery/211124_03/export_cylindrical.fbx"; 
-let gltfURL = "/models/gallery/211202_export_02/211202_export_02.gltf"; 
+let fbxURL = "models/gallery/211124_03/export_cylindrical.fbx"; 
+let gltfURL = "models/gallery/211202_export_02/211202_export_02.gltf"; 
 function loadMoldeledObjects(scene) {
     fbxLoader.load(fbxURL,(fbx) => {
         fbx.scale.set(0.01, 0.01, 0.01)

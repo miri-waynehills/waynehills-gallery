@@ -123,8 +123,9 @@ const tick = () =>
     const intersectFloor = raycasterFloor.intersectObjects(castFloor)
 
     for(const intersect of intersectWall){
+        console.log('uvWall', intersect.uv);
         for(const intersect of intersectFloor) {
-            console.log('uv', intersect.uv);
+            console.log('uvFloor', intersect.uv);
             if(intersect.uv.x < 0.5) {
                 cameraPosition.x += 5
             }
