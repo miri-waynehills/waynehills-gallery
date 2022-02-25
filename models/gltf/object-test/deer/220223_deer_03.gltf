@@ -1,0 +1,155 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "ORIGAMI_Cerf003",
+            "rotation" : [
+                0,
+                0.4927211105823517,
+                0,
+                0.8701872825622559
+            ],
+            "scale" : [
+                0.019999999552965164,
+                0.019999999552965164,
+                0.019999999552965164
+            ],
+            "translation" : [
+                1.6183509826660156,
+                1.0004496574401855,
+                -0.35573720932006836
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "alphaMode" : "BLEND",
+            "doubleSided" : true,
+            "name" : "Material #541.002",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "baseColorTexture" : {
+                    "index" : 0
+                },
+                "roughnessFactor" : 0.858578622341156
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Mesh.002",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "opcity_01",
+            "uri" : "opcity_01.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 3980,
+            "max" : [
+                47.163597106933594,
+                223.9100341796875,
+                116.02445983886719
+            ],
+            "min" : [
+                -47.163597106933594,
+                -6.247199507924961e-06,
+                -98.39238739013672
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 3980,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 3980,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 3984,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 47760,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 47760,
+            "byteOffset" : 47760
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 31840,
+            "byteOffset" : 95520
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 7968,
+            "byteOffset" : 127360
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 135328,
+            "uri" : "220223_deer_03.bin"
+        }
+    ]
+}
